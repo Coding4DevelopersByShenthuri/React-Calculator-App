@@ -1,0 +1,53 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../public/images/brown-wood-background.webp);
+  background-size: cover;
+}
+
+.calculator {
+  background-color: #080808;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
+  width: 300px;
+}
+
+.display {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  height: 60px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: #2df1c0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7a8380;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+button:active {
+  background-color: #27fcd8;
+}
